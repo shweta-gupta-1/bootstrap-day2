@@ -1,0 +1,64 @@
+.yt-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+
+}
+
+.yt-thumbnail {
+     position:relative;
+     img {
+        width: 100%;
+     }
+}
+
+.timestamp {
+    position:absolute;
+    bottom:0;
+    right:0;
+    background-color: black;
+    color: white;
+    margin: 12px;
+    font-size:14px;
+    padding:3px;
+    border-radius:3px;
+}
+
+.video-info-grid{
+    display: grid ;
+    grid-template-columns: 49px 1fr;
+}
+
+.channel-profile{
+    padding: 7px 10px 0px 3px;
+    img {
+        width:36px;
+        border-radius:50px;
+    }
+}
+
+.video-title{
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.channel-name, .video-stats{
+    color: #8b7f7f;
+    font-size: 12px;
+}
+
+
+
+
+@media screen and (max-width:480px) {
+    .yt-cards-container{
+        display: gride;
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+}
+
+body{
+    font-family: "playwrite Colombia Guides", serif;
+}
+
